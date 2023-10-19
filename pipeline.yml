@@ -1,0 +1,10 @@
+image: python:3.7.2
+pipelines:
+  default:
+    - step:
+        script:
+          - pip install --upgrade pip
+          - python --version
+          - pip install jira "xlwings[all]"
+          - pip install --upgrade xlwings
+          #- xlwings addin install
